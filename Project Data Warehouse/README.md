@@ -22,11 +22,13 @@ As their data engineer, you are tasked with building an ETL pipeline that extrac
 For this project I worked with two datasets stored in S3 (us-west-2 region):
 
 - Song data: s3://udacity-dend/song_data
-This dataset contains information about artists and songs, such as shown in this example:
+  
+This dataset contains information about artists and songs.
 
 
 - Log data: s3://udacity-dend/log_data
-This dataset has information about the app usage, such as events and streaming information, as shown: 
+  
+This dataset has information about the app usage, such as events and streaming information.
 
 Additionaly, a third file was provided with metadata required by AWS to correctly load the Log dataset using COPY command:
 
