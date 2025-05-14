@@ -1,4 +1,4 @@
-#Project: Data Warehouse
+# Project: Data Warehouse
 
 The README file includes a summary of the project, how to run the Python scripts, and an explanation of the files in the repository. Comments are used effectively and each function has a docstring.
 
@@ -69,6 +69,8 @@ Dimension tables:
 2. Run [etl.py](etl.py) to load raw data from S3 into Redshift staging tables and transform the data from staging tables into star-schema tables.
 
 3. Run [analytics.py](analytics.py) to validate the etl process. The results are shown below:
+![Captura de tela 2025-05-13 212821](https://github.com/user-attachments/assets/e9da7b24-bcfc-4235-9b16-02236256a209)
+![Captura de tela 2025-05-13 212838](https://github.com/user-attachments/assets/63bbc9ba-445f-4c87-8e36-5283aabdeada)
 
 
 4. Run the 'Cleaning up resources' section on [sql_queries.py](sql_queries.py) to shutdown all AWS resources. 
