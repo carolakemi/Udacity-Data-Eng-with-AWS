@@ -85,6 +85,11 @@ Dimension tables:
   - artists: information about the artists in the database
   - time: more deatiled information on timestamp records of song plays
 
+ER Diagram:
+
+![image](https://github.com/user-attachments/assets/29382195-a6cb-4864-add3-d532861a518b)
+
+
 ## ETL Pipeline
 
 1. Run [create_tables.py](create_tables.py) to drop tables if exists and create staging, fact and dimension tables schema. The script is in pyhton, referencing the queries from [sql_queries.py](sql_queries.py)
@@ -92,8 +97,9 @@ Dimension tables:
 2. Run [etl.py](etl.py) to load raw data from S3 into Redshift staging tables and transform the data from staging tables into star-schema tables.
 
 3. Run [analytics.py](analytics.py) to validate the etl process. The results are shown below:
+   
 ![Captura de tela 2025-05-13 212821](https://github.com/user-attachments/assets/e9da7b24-bcfc-4235-9b16-02236256a209)
 ![Captura de tela 2025-05-13 212838](https://github.com/user-attachments/assets/63bbc9ba-445f-4c87-8e36-5283aabdeada)
 
 
-4. Run the 'Cleaning up resources' section on [sql_queries.py](sql_queries.py) to shutdown all AWS resources. 
+5. Run the 'Cleaning up resources' section on [sql_queries.py](sql_queries.py) to shutdown all AWS resources. 
