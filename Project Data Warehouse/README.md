@@ -47,6 +47,27 @@ This collection of queries will be used for [create_tables.py](create_tables.py)
 
 ## 5. Dataset exploration
 Run [inspect_datasets.ipynb](inspect_datasets.ipynb) to inspect the datasets used for the project.
+Inside the bucket there are files as shown: 
+
+![image](https://github.com/user-attachments/assets/55ae8d77-5e34-4b13-92f7-5bb3a45d0f74)
+
+![image](https://github.com/user-attachments/assets/ace4649e-15ed-4fb1-9950-d5491d9b143a)
+
+![image](https://github.com/user-attachments/assets/f5678085-e4e4-4648-8abb-e2e5cbbaf102)
+
+
+Looking at examples of song_data and log_data as dataframes, it is possible to better identify what type of data is registered: 
+
+song_data sample:
+
+![image](https://github.com/user-attachments/assets/c93ab001-67a2-49db-a2cb-2444cd1c0da8)
+
+
+log_data sample:
+
+![image](https://github.com/user-attachments/assets/51677e50-eea3-49b9-aa05-db802087a3da)
+
+
 
 ## 6. Database structure
 Staging tables: data from json files in the S3 bucket
