@@ -38,11 +38,11 @@ Log metadata: s3://udacity-dend/log_json_path.json
 - Create IAM User: save its key and secret (password)
 - fill [configuration file](dwh.cfg) with the required information about AWS IAM User and database configuration
 - on [sql_queries.py](sql_queries.py) file, build queries to:
- - drop any existing tables; 
- - create tables for staging and schema; 
- - extract data from json files in the 'udacity-dend' bucket into the staging tables;
- - insert data into schema tables;
- - additionaly, build analytical queries to check if the process was successful;
+   - drop any existing tables; 
+   - create tables for staging and schema; 
+   - extract data from json files in the 'udacity-dend' bucket into the staging tables;
+   - insert data into schema tables;
+   - additionaly, build analytical queries to check if the process was successful;
 This collection of queries will be used for [create_tables.py](create_tables.py) and [etl.py](etl.py).
 - AWS Resources: run the [setup_AWS_resources.ipynb](setup_AWS_resources.ipynb) . I followed the exercise on Infrastructure as Code on module 4 from this course.
 
@@ -73,17 +73,17 @@ log_data sample:
 
 ## 6. Database structure
 Staging tables: data from json files in the S3 bucket
-    - staging_events
-    - staging_songs
+  - staging_events
+  - staging_songs
 
 Fact table:
-    - songplays: data related to song plays, in which the information is recorded with page='NextSong'
+  - songplays: data related to song plays, in which the information is recorded with page='NextSong'
 
 Dimension tables:
-    - users: users in the app
-    - songs: information about the songs in the database
-    - artists: information about the artists in the database
-    - time: more deatiled information on timestamp records of song plays
+  - users: users in the app
+  - songs: information about the songs in the database
+  - artists: information about the artists in the database
+  - time: more deatiled information on timestamp records of song plays
 
 ## ETL Pipeline
 
